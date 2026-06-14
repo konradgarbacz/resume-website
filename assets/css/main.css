@@ -2583,29 +2583,41 @@ input, select, textarea {
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		-moz-align-items: -moz-flex-end;
-		-webkit-align-items: -webkit-flex-end;
-		-ms-align-items: -ms-flex-end;
-		align-items: flex-end;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #faf8f3;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 8em 2em;
 		position: fixed;
-		text-align: right;
+		text-align: center;
 		top: 0;
-		width: 35%;
+		width: 18%;
+		
 	}
+	
+	#header .icons {
+    margin-top: 4em;
+}
+#header .icons a {
+    color: #000000;
+}
+
+#header .icons a:hover {
+    color: #000000;
+}
 
 		#header > * {
 			-moz-flex-shrink: 0;
@@ -2624,7 +2636,7 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #000000;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2639,8 +2651,9 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
+			margin: 0 auto 1em auto;
 			width: 6.25em;
+			display: block;
 		}
 
 /* Footer */
@@ -2650,11 +2663,11 @@ input, select, textarea {
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: rgba(1, 1, 1, 0.4);
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+		color: rgba(9, 9, 9, 0.4);
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
@@ -2682,12 +2695,31 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
+		margin-left: 28%;
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
-		width: calc(100% - 35%);
+		width: calc(100% - 28%);
 	}
+#one h1 strong{
+    font-size: 1em;
+	font-weight:bold;
+	color: #000000 !important;
+	font-family: 'JetBrains Mono', sans-serif;
+}
 
+
+#one h3 {
+    margin-top: 0.3em;
+	margin-bottom: 4em;
+}
+#one h3 a {
+    margin-right: 0.5em;
+    color: #000000;
+}
+#one p {
+	color: #6c6b6b;
+	font-family: 'Helvetica', sans-serif;
+}
 		#main > section {
 			border-top: solid 2px #efefef;
 			margin: 4em 0 0 0;
@@ -3078,7 +3110,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3218,4 +3250,46 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+	}
+/* Experience Section */
+
+	.experience-item {
+		margin-bottom: 2.5em;
+		padding-left: 1.2em;
+		border-left: 3px solid #efefef;
+	}
+
+	.experience-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.experience-item .job-title {
+		font-size: 1.1em;
+		font-weight: 600;
+		color: #000000;
+		margin-bottom: 0.15em;
+	}
+
+	.experience-item .job-meta {
+		font-size: 0.85em;
+		color: #aaaaaa;
+		margin-bottom: 0.8em;
+		font-style: italic;
+	}
+
+	.experience-item ul {
+		list-style: disc;
+		padding-left: 1.2em;
+	}
+
+	.experience-item ul li {
+		font-size: 0.9em;
+		color: #555555;
+		line-height: 1.6em;
+		margin-bottom: 0.3em;
+	}
+
+	.experience-item ul li strong {
+		color: #333333;
+		font-weight: 600;
 	}

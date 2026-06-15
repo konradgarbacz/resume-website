@@ -2658,24 +2658,17 @@ input, select, textarea {
 
 /* Footer */
 
-	#footer .icons {
-		margin: 1em 0 0 0;
-	}
-
-		#footer .icons a {
-			color: rgba(1, 1, 1, 0.4);
-		}
+	
 
 	#footer .copyright {
-		color: rgba(9, 9, 9, 0.4);
-		font-size: 0.8em;
+		color: rgba(0, 0, 0, 0.4);
+		font-size: 0.4em;
 		list-style: none;
-		margin: 1em 0 0 0;
 		padding: 0;
 	}
 
 		#footer .copyright li {
-			border-left: solid 1px rgba(255, 255, 255, 0.25);
+			border-left: solid 1px rgba(0, 0, 0, 0.25);
 			display: inline-block;
 			line-height: 1em;
 			margin-left: 0.75em;
@@ -2699,12 +2692,19 @@ input, select, textarea {
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 28%);
+		
+		
 	}
 #one h1 strong{
+	margin:center;
     font-size: 1em;
 	font-weight:bold;
 	color: #000000 !important;
 	font-family: 'JetBrains Mono', sans-serif;
+}
+
+#one {
+	text-align: center;
 }
 
 
@@ -3256,7 +3256,7 @@ input, select, textarea {
 	.experience-item {
 		margin-bottom: 2.5em;
 		padding-left: 1.2em;
-		border-left: 3px solid #efefef;
+		border-left: 3px solid #5b7fa6;
 	}
 
 	.experience-item:last-child {
@@ -3292,4 +3292,51 @@ input, select, textarea {
 	.experience-item ul li strong {
 		color: #333333;
 		font-weight: 600;
+	}
+
+/* Skills Section */
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1.8em;
+		margin-top: 1.5em;
+	}
+
+	.skill-category {
+		background: #faf8f3;
+		border-radius: 6px;
+		padding: 1.2em 1.4em;
+		border-top: 3px solid #5b7fa6;
+	}
+
+	.skill-category h4 {
+		font-size: 0.75em;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
+		color: #5b7fa6;
+		margin: 0 0 0.8em 0;
+		font-weight: 600;
+	}
+
+	.skill-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4em;
+	}
+
+	.skill-tag {
+		background: #ffffff;
+		border: 1px solid #e0ddd8;
+		color: #4a4a4a;
+		font-size: 0.78em;
+		padding: 0.25em 0.65em;
+		border-radius: 3px;
+		line-height: 1.6em;
+	}
+
+	@media screen and (max-width: 736px) {
+		.skills-grid {
+			grid-template-columns: 1fr;
+		}
 	}

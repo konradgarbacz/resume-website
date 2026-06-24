@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-My personal portfolio and resume website built with HTML/CSS.
+My personal portfolio and resume website built with HTML/CSS and some JavaScript
 
 ## Live Demo
 [konradgarbacz.xyz](https://konradgarbacz.xyz)

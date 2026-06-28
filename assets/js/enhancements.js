@@ -4,7 +4,6 @@
     - Scroll animations
     - Skill tag hover
     - Smooth scroll
-    - Side navbar
 */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -84,43 +83,5 @@ document.addEventListener('DOMContentLoaded', function () {
     const smoothStyle = document.createElement('style');
     smoothStyle.textContent = `html { scroll-behavior: smooth; }`;
     document.head.appendChild(smoothStyle);
-
-
-    /* ── 5. NAVBAR ── */
-    const navStyle = document.createElement('style');
-    navStyle.textContent = `
-        #side-nav {
-            margin-top: 1.5em;
-            display: flex;
-            flex-direction: column;
-            gap: 0.4em;
-        }
-        #side-nav a {
-            color: rgba(0,0,0,0.5);
-            text-decoration: none !important;
-            font-size: 0.85em;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            transition: color 0.2s ease, padding-left 0.2s ease;
-            padding-left: 0;
-            border-bottom: none !important;
-        }
-        #side-nav a:hover {
-            color: #49bf9d;
-            padding-left: 6px;
-        }
-    `;
-    document.head.appendChild(navStyle);
-
-    const nav = document.createElement('nav');
-    nav.id = 'side-nav';
-    nav.innerHTML = `
-        <a href="#two">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#three">Contact</a>
-    `;
-
-    const headerInner = document.querySelector('#header .inner');
-    if (headerInner) headerInner.appendChild(nav);
 
 });

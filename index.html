@@ -10,6 +10,28 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#side-nav {
+				margin-top: 1.5em;
+				display: flex;
+				flex-direction: column;
+				gap: 0.4em;
+			}
+			#side-nav a {
+				color: rgba(0,0,0,0.5);
+				text-decoration: none !important;
+				border-bottom: none !important;
+				font-size: 0.85em;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				transition: color 0.2s ease, padding-left 0.2s ease;
+				padding-left: 0;
+			}
+			#side-nav a:hover {
+				color: #49bf9d;
+				padding-left: 6px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -23,6 +45,11 @@
 						<li><a href="https://github.com/konradgarbacz" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						<li><a href="https://www.linkedin.com/in/konrad-garbacz-b1513a360" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 					</ul>
+					<nav id="side-nav">
+						<a href="#two">Experience</a>
+						<a href="#skills">Skills</a>
+						<a href="#three">Contact</a>
+					</nav>
 				</div>
 			</header>
 

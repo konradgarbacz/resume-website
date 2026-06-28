@@ -7,7 +7,7 @@
     - Side navbar
 */
 
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
     /* ── 1. TYPING EFFECT ── */
     const typingTarget = document.querySelector('#one p');
@@ -94,7 +94,6 @@
             display: flex;
             flex-direction: column;
             gap: 0.4em;
-            border-bottom: none !important;
         }
         #side-nav a {
             color: rgba(0,0,0,0.5);
@@ -124,4 +123,4 @@
     const headerInner = document.querySelector('#header .inner');
     if (headerInner) headerInner.appendChild(nav);
 
-})();
+});

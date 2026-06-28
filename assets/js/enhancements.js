@@ -94,15 +94,17 @@
             display: flex;
             flex-direction: column;
             gap: 0.4em;
+            border-bottom: none !important;
         }
         #side-nav a {
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
+            color: rgba(0,0,0,0.5);
+            text-decoration: none !important;
             font-size: 0.85em;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             transition: color 0.2s ease, padding-left 0.2s ease;
             padding-left: 0;
+            border-bottom: none !important;
         }
         #side-nav a:hover {
             color: #49bf9d;
